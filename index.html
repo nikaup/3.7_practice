@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>White Echo</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="row">
+  		<div class="column">
+    <div class="card">..</div>
+  	</div>
+  	<div class="column">
+    	<div class="card">..</div>
+  	</div>
+	  <div class="column">
+		<div class="card">..</div>
+	  </div>
+	  <div class="column">
+		<div class="card">..</div>
+	  </div>
+	</div>
+	
+	<label>Check in Date<input type="dateD" id="pickUpTime" max="" min="" required="" title="Please enter a date"></label><br>
+	
+	<h1>Your details</h1>
+	<label>First name:<input autocomplete="given-name" id="firstNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="John"  title="Please enter in your first name" type="text" required></label> 
+    <div id="errorMessage1" class="errorMessages"></div><br>
+        
+    <label>Last name:<input autocomplete="family-name" id="lastNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="Smith" required title="Please enter in your last name" type="text"></label>
+    <div id="errorMessage2" class="errorMessages"></div><br>
+    
+    <label>Cellphone: <input autocomplete="on" id="cellphoneInput" placeholder="0224165450" pattern="[02][0-9]{9,11}" title="Enter your cellphone" type="text" required></label>
+	<div id="errorCellphone"  class="errorMessages"></div><br>
+	
+	<label>Email address:</label>
+		<input autocomplete="on" id="emailInput" required="" placeholder="john@email" title="Enter your email address" type="email">
+		<br>
+	
+	<p>Do you accept the terms and conditions</p>
+	<div id="errorPickUpTime"  class="errorMessages"></div><br>
+	
+	 <button class="submitButton" id="submitButton" onclick="loopForm()">Confirm Booking</button>
+	<br>
+	
+	
+	<script src="airtable.browser.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+
